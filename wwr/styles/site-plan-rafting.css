@@ -1,28 +1,28 @@
 /* if you are using any Google fonts change the font names below to your fonts. 
 Any spaces in your font name should be replaced with a +. 
 Fonts are separated by a & */
-@import url('https://fonts.googleapis.com/css2?family=IM+Fell+French+Canon&family=Lato:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,700&family=PT+Sans&display=swap');
 
 :root {
   /* change the values below to your colors from your palette */
   --primary-color: #031926   ;
   --secondary-color: #468189 ;
   --accent1-color: #a5b452;
-  --accent2-color: #f7f7f7;
+  --accent2-color: #f7f7ff;
 
   /* change the values below to your chosen font(s) */
-  --heading-font: "IM Fell French Canon";
-  --paragraph-font: Lato, Helvetica, sans-serif;
+  --heading-font: Lora , Lato;
+  --paragraph-font: "PT Sans", sans-serif;
 
   /* these colors below should be chosen from among your palette colors above */
-  --headline-color-on-white: #468189;  /* headlines on a white background */ 
+  --headline-color-on-white: #031926;  /* headlines on a white background */ 
   --headline-color-on-color: #f7f7ff; /* headlines on a colored background */ 
   --paragraph-color-on-white: #031926; /* paragraph text on a white background */ 
-  --paragraph-color-on-color: #031926; /* paragraph text on a colored background */ 
-  --paragraph-background-color: #468189;
-  --nav-link-color: #031926;
+  --paragraph-color-on-color: #f7f7ff; /* paragraph text on a colored background */ 
+  --paragraph-background-color: #031926;
+  --nav-link-color: #f7f7ff;
   --nav-background-color: #468189;
-  --nav-hover-link-color: #f7f7f7;
+  --nav-hover-link-color: #031926;
   --nav-hover-background-color: #a5b452;
 }
 
