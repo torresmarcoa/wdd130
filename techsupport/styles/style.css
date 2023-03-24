@@ -20,7 +20,14 @@ nav a:hover {
     color: #11161b;
 }
 .logo {
-    width: 80px;
+    width: 100px;
+}
+.logo:hover {
+    opacity: .9;
+    transform: scale(1.2);
+    border: 5px solid #4ab8f7;
+    transition: transform .5s;
+    box-shadow: 5px 5px 10px #11161b;
 }
 #logo-link {
     padding-top: 5px;
@@ -69,7 +76,7 @@ body {
     text-align: center;
     font-family: "Josefin Sans", Verdana, sans-serif;
 }
-.ourservices-btn {
+.ourservices-btn, .get-servicesbtn {
     background-color: #27488f;
     color: #e1e2eb;
     text-decoration: none;
@@ -78,7 +85,7 @@ body {
     margin-top: 50px;
     border-radius: 5px;  
 }
-.ourservices-btn:hover {
+.ourservices-btn:hover, .get-servicesbtn:hover {
     background-color: #4ab8f7;
     color: #11161b;
 }
@@ -254,6 +261,52 @@ button {
     margin-top: 3em;
 }
 
+.services-title {
+    text-align: center;
+    margin-top: 50px;
+}
+.preventive-text h2 {
+    text-align: center;
+}
+.computer-two {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border: 10px solid #4ab8f7;
+    transition: transform .5s;
+    box-shadow: 5px 5px 10px #11161b;
+}
+.computer-two:hover {
+    opacity: .8;
+    transform: scale(1.1);
+}
+.corrective-text h2 {
+    text-align: center;
+}
+.server-two {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border: 10px solid #4ab8f7;
+    transition: transform .5s;
+    box-shadow: 5px 5px 10px #11161b;
+}
+.server-two:hover {
+    opacity: .8;
+    transform: scale(1.1);
+}
+.network-text h2 {
+    text-align: center;
+}
+.btn-services {
+    margin-top: 50px;
+    text-align: center;
+}
+
 
 @media screen and (max-width: 900px) {
     nav, footer {
@@ -301,5 +354,23 @@ button {
         grid-column: 1/3;
         grid-row: 3/4;
         justify-self: center;
+    }
+    .computer-two {
+        width: 80%;
+    }
+    .server-two {
+        width: 80%;
+    }
+    .preventive-text {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    .corrective-text {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    .network-text {
+        margin-left: 50px;
+        margin-right: 50px;
     }
 }
