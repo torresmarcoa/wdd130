@@ -128,6 +128,20 @@ footer .social img {
     grid-row: 3/4;
     justify-self: center;
 }
+.container-three {
+    position: relative;
+    width: 80%;
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+.container-four {
+    position: relative;
+    width: 65%;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    justify-self: right;
+    margin-right: 50px;
+}
 .container img {
     width: 100%;
     display: block;
@@ -136,7 +150,19 @@ footer .social img {
     width: 100%;
     display: block;
 }
-.overlay {
+.container-three img {
+    align-self: center;
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+}
+.container-four img {
+    align-self: center;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+.overlay, .overlay-two, .overlay-three, .overlay-four {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -148,26 +174,9 @@ footer .social img {
     transition: .5s ease;
     background-color: #031926;
 }
-.overlay-two {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    transition: .5s ease;
-    background-color: #031926;
-}
-.container:hover .overlay {
+.container:hover .overlay, .container-two:hover .overlay-two, .container-three:hover .overlay-three, .container-four:hover .overlay-four {
     opacity: .80;
 }  
-.container-two:hover .overlay-two {
-    opacity: .80;
-}  
-
-
 .text {
     font-size: 20px;
     position: absolute;
@@ -307,6 +316,45 @@ button {
     text-align: center;
 }
 
+.grid-aboutteam {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+    margin-top: 100px;
+    margin-bottom: 150px;
+}
+.team-title {
+    font-family: "Josefin Sans", Verdana, sans-serif;
+    text-align: center;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    align-self: center;
+    margin-left: 150px;
+}
+.about-text {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+.contactus-btn {
+    background-color: #27488f;
+    color: #e1e2eb;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px; 
+}
+.btn-contact {
+    text-align: center;
+    margin-top: 50px;
+    grid-column: 1/3;
+    grid-row: 3/4;
+}
+.contactus-btn:hover {
+    background-color: #4ab8f7;
+    color: #11161b;
+}
+
 
 @media screen and (max-width: 900px) {
     nav, footer {
@@ -326,11 +374,6 @@ button {
     .server-one {
         width: 75%;
         display: block;
-        margin: 0 auto;
-    }
-    .fixing-motherboard {
-        display: block;
-        width: 60%;
         margin: 0 auto;
     }
     .home-title {
@@ -358,9 +401,6 @@ button {
     .computer-two {
         width: 80%;
     }
-    .server-two {
-        width: 80%;
-    }
     .preventive-text {
         margin-left: 50px;
         margin-right: 50px;
@@ -372,5 +412,34 @@ button {
     .network-text {
         margin-left: 50px;
         margin-right: 50px;
+    }
+    .grid-aboutteam {
+        display: block;
+        height: auto;
+    }
+    .team-title {
+        text-align: center;
+        margin: 0 auto;
+    }
+    .container-three {
+        margin: 0 auto;
+        width: 100%;
+    }
+    .container-four {
+        margin: 0 auto;
+    }
+    .container-four img {
+        width: 100%;
+    }
+    .about-text {
+        margin-left: 50px;
+        margin-right: 50px;
+        font-size: 20px;
+    }
+    form {
+        width: 100%;
+    }
+    form label {
+        text-align: left;
     }
 }
