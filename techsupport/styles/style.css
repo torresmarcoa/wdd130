@@ -442,4 +442,7 @@ button {
     form label {
         text-align: left;
     }
+    .server-two {
+        width: 80%;
+    }
 }
